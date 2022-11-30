@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="parent-div">
+        <div class = "child-div">
+            <div>
+           <h3 class = "parent-h">9:41<i class="fa fa-signal" style="font-size:14px"></i></h3>
+        </div>
+        <div>
+           <p class = "paragraph">Temperature Converter</p>
+        </div>
+        <form class="form">
+
+        <div class="inputs">
+            <label for="number-input">Degrees</label><br>
+            <input type='text' class="input1"/>
+            <!-- <input type="number" id="number-input" class = "input1"> -->
+        </div>
+            <div class="inputs1">
+            <label for="text-input1">Type</label>
+            <select class="type" id="text-input1" name="project">
+              <option selected style = "font-size: 15px;">Fahrenheit</option>
+              <option value="">Celsius</option>
+            </select>
+          </div>
+          <div class="inputs2">
+            <label for="number-input">Result</label><br>
+            <input type='text' onkeypress='validate(event)' class="input1"/>
+            <!-- <input type="number" id="number-input" class = "input1"> -->
+        </div>
+        <button class="convert-button">Convert</button>
+        </div>
+    </form>
+        </div>
+       
+    </div>
+</body>
+</html>
